@@ -1,0 +1,128 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.container{
+    height: 600px;
+    width: 400px;
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.18);
+    box-shadow:  10px 25px 25px 15px rgba(0,0,0,0.37);
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/863/383/desktop-wallpaper-orange-flames-%C2%B7-stock-fire-texture.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.login-form{
+    margin: 5px 20px;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.login-form label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    padding:5px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.login-form input:hover{
+    background-color: rgb(250, 246, 246);
+}
+.login-form input:focus{
+    border: 1px solid rgb(175, 162, 162);
+}
+
+.login-form .success input {
+ border: green;
+}
+
+.login-form .error input {
+    border: red;
+   }
+
+   .login-form i {
+    top: 40px;
+    visibility: hidden;
+    position: absolute;
+    right: 25px;
+   }
+
+   .login-form.success i.fa-circle-check
+   {
+    visibility: visible;
+   color: green;
+   }
+
+   .login-form.error i.fa-exclamation-circle
+   {
+    visibility: visible;
+    color: red;
+   }
+   .button{
+    padding: 5px 15px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid  gray;
+    transition: ease 1s;
+   }
+
+   .button:hover{
+    font-size: 20px;
+    background-color:lightgreen;
+    transition: 0.5s;
+   }
+
+   .login-form small{
+    position: absolute;
+    color: red;
+   visibility: hidden;
+   }
+
+   .login-form.error small{
+    visibility: visible;
+   }
